@@ -5,7 +5,7 @@ $(document).ready(function($){
     })
 
     $(".home_button").on("click", function() {
-        document.location.href="../src/main.html";
+        document.location.href="../main.html";
     })
 
     $(".back_button").on("click", function() {
@@ -13,22 +13,22 @@ $(document).ready(function($){
     })
 
     $("#first_period").on("click", function() {
-        document.location.href="../src/first_period.html";
+        document.location.href="../first_period.html";
     })
 
     $("#second_period").on("click", function() {
-        document.location.href="../src/second_period.html";
+        document.location.href="../second_period.html";
     })
 
     $("#third_period").on("click", function() {
-        document.location.href="../src/third_period.html";
+        document.location.href="../third_period.html";
     })
 
     $("#fourth_period").on("click", function() {
-        document.location.href="../src/fourth_period.html";
+        document.location.href="../fourth_period.html";
     })
 
     $("#last_tour").on("click", function() {
-        document.location.href="../src/last_tour.html";
+        document.location.href="../last_tour.html";
     })
 });
