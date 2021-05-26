@@ -5,7 +5,7 @@ $(document).ready(function($){
     })
 
     $(".home_button").on("click", function() {
-        document.location.href="../main.html";
+        document.location.href="../multimedia.github.io/main.html";
     })
 
     $(".back_button").on("click", function() {
@@ -13,22 +13,22 @@ $(document).ready(function($){
     })
 
     $("#first_period").on("click", function() {
-        document.location.href="../first_period.html";
+        document.location.href="../multimedia.github.io/first_period.html";
     })
 
     $("#second_period").on("click", function() {
-        document.location.href="../second_period.html";
+        document.location.href="../multimedia.github.io/second_period.html";
     })
 
     $("#third_period").on("click", function() {
-        document.location.href="../third_period.html";
+        document.location.href="../multimedia.github.io/third_period.html";
     })
 
     $("#fourth_period").on("click", function() {
-        document.location.href="../fourth_period.html";
+        document.location.href="../multimedia.github.io/fourth_period.html";
     })
 
     $("#last_tour").on("click", function() {
-        document.location.href="../last_tour.html";
+        document.location.href="../multimedia.github.io/last_tour.html";
     })
 });
