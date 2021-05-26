@@ -5,7 +5,7 @@ $(document).ready(function($){
     })
 
     $(".home_button").on("click", function() {
-        document.location.href="../multimedia.github.io/main.html";
+        document.location.href="../multimedia.github.io/index.html";
     })
 
     $(".back_button").on("click", function() {
