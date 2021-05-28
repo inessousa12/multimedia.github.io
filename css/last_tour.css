@@ -49,4 +49,22 @@ body {
 
 .back_button:hover {
     cursor: pointer;
+
+}
+
+
+/* video stuff */
+
+.two-iframes{
+    display: inline-flex;
+    margin-top: -38px;
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.box{
+    width: 100%;
+    float:left;
+    margin-left:20px;
+    margin-right:20px;
 }
