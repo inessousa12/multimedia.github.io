@@ -4,6 +4,7 @@ $(document).ready(function(){
     $("#map-europe").CSSMap({
       "size": 540
     });
+
     // END OF THE CSSMap;
     
 });

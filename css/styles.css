@@ -75,7 +75,7 @@ html {
     width: 50%;
 }
 
-ol, li {
+.timeline_container > ol, .timeline_container > ol > li {
     margin: 0;
     padding: 0;
     color: #000000;
@@ -83,7 +83,7 @@ ol, li {
     font-size: 14px;
   }
   
-  ol {
+  .timeline_container > ol {
     display: flex;
     width: auto;
     justify-content: space-between;
@@ -91,7 +91,7 @@ ol, li {
     
   }
 
-  ol:after {
+  .timeline_container > ol:after {
     content: '';
     display: block;
     width: 100%;
@@ -104,14 +104,14 @@ ol, li {
     z-index: -1;
   }
   
-  li {
+  .timeline_container > ol > li {
     list-style-type: none;
     position: relative;
     cursor: pointer;
     
   }
 
-  li:after {
+  .timeline_container > ol > li:after {
     content: '';
     display: block;
     width: 12px;
@@ -122,15 +122,15 @@ ol, li {
     transition: background-color .2s ease;
   }
   
-  li:hover:after {
+  .timeline_container > ol > li:hover:after {
     background-color: mix(#000000, #c2c2c2);
   }
   
-  li.active:after {
+  .timeline_container > ol > li.active:after {
     background-color: #c2c2c2;
   }
   
-  span {
+  .timeline_container > ol > li > span {
     position: absolute;
     top: calc(100% + 20px);
     left: 50%;

@@ -68,3 +68,17 @@ body {
     margin-left:20px;
     margin-right:20px;
 }
+
+#invisible_layer{
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    background-color: transparent;
+}
+
+/* important para reescrever cenas do mapa */
+
+/* .possible-region, .possible-region .bg {
+    background: transparent url(dark/eu-540.png) no-repeat 0 0 !important;
+    opacity: 60% !important;
+} */
