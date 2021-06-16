@@ -1,3 +1,8 @@
+body {
+    position: relative;
+    min-height: 100%;
+}
+
 .home_button {
     margin-left: 1%;
 }
@@ -44,4 +49,46 @@
 
 .back_button:hover {
     cursor: pointer;
+}
+
+iframe {
+    width: 80%;
+    margin-left: 5%;
+}
+
+.video_indexing{
+    display: inline-flex;
+    margin-top: -38px;
+    margin-bottom: 150px;
+}
+
+.index {
+    margin-right: 5%;
+    width: 100%;
+}
+
+.index img {
+    width: 100%;
+}
+
+figure {
+    display: inline-block;
+    width: 20%;
+    min-height: 100px;
+	max-height: 200px;
+    margin-right: 10px;
+}
+
+figure:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figcaption:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
