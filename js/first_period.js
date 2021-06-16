@@ -7,5 +7,7 @@ $(document).ready(function($){
         video += "start=" + min + "&autoplay=1";
         console.log(video);
         document.getElementsByTagName('iframe')[0].src = video;
+	
     });
+	
 }) 
