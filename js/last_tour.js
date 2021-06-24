@@ -1,7 +1,7 @@
 var player;
 var checkInt; // save this as a var in this scope so we can clear it later
 function onYouTubePlayerAPIReady() {
-    window.player = new YT.Player('player');
+    player = document.getElementById("player");
     startInterval()
 }
 
