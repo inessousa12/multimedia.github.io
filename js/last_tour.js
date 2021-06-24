@@ -1,6 +1,6 @@
 $(document).ready(function($){
 
-    let element = document.getElementById("player");
+    let element = document.getElementsByTagName('iframe')[0].src;
     if (element.playerinfo.currentTime > 0) {
         getElementById("0").style.color = "blue";
     }
