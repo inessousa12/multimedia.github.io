@@ -1,19 +1,19 @@
 var player;
 var checkInt; // save this as a var in this scope so we can clear it later
 function onYouTubePlayerAPIReady() {
-player = new YT.Player('player');
-startInterval()
+    window.player = new YT.Player('player');
+    startInterval()
 }
 
 function startInterval() {
-//checks every 1000ms to see if the video has reached 6s
-checkInt = setInterval(function() {
+    //checks every 1000ms to see if the video has reached 6s
+    checkInt = setInterval(function() {
     console.log(player.getCurrentTime());
-    if (player.getCurrentTime() > 1) {
-        changeSrc();
-        clearInterval(checkInt);
-    };
-}, 1000)
+        if (player.getCurrentTime() > 1) {
+            changeSrc();
+            clearInterval(checkInt);
+        };
+    }, 1000)
 }
 
 function changeSrc() {
