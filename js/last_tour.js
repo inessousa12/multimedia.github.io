@@ -1,8 +1,24 @@
 $(document).ready(function($){
 
-    let element = document.getElementsByTagName('iframe')[0].src;
-    if (element.playerinfo.currentTime > 0) {
-        getElementById("0").style.color = "blue";
+    var player;
+    var checkInt; // save this as a var in this scope so we can clear it later
+    function onYouTubePlayerAPIReady() {
+    player = new YT.Player('player');
+    startInterval()
+    }
+
+    function startInterval() {
+    //checks every 100ms to see if the video has reached 6s
+    checkInt = setInterval(function() {
+        if (player.getCurrentTime() > 0) {
+            changeSrc();
+            clearInterval(checkInt);
+        };
+    }, 1000)
+    }
+
+    function changeSrc() {
+        document.getElementById("0").className += ' active-region'
     }
 
     // CSSMap;
