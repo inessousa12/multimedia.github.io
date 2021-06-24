@@ -1,4 +1,10 @@
 $(document).ready(function($){
+
+    let element = document.getElementById("player");
+    if (element.getCurrentTime() > 0) {
+        getElementById("0").style.color = "blue";
+    }
+
     // CSSMap;
     $("#map-europe").CSSMap({
         "size": 540,
@@ -11,9 +17,4 @@ $(document).ready(function($){
             document.getElementsByTagName('iframe')[0].src = video;
         },
     });
-
-    let element = document.getElementById("player");
-    if (element.getCurrentTime() > 0) {
-        getElementById("0").style.color = "blue";
-    }
 });
