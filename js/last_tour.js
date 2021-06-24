@@ -1,7 +1,7 @@
 $(document).ready(function($){
 
     let element = document.getElementById("player");
-    if (element.getCurrentTime() > 0) {
+    if (element.playerinfo.currentTime > 0) {
         getElementById("0").style.color = "blue";
     }
 
