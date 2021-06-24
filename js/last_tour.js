@@ -1,5 +1,4 @@
-$(document).ready(function($){
-
+$( window ).on( "load", function() {
     var player;
     var checkInt; // save this as a var in this scope so we can clear it later
     function onYouTubePlayerAPIReady() {
@@ -8,9 +7,10 @@ $(document).ready(function($){
     }
 
     function startInterval() {
-    //checks every 100ms to see if the video has reached 6s
+    //checks every 1000ms to see if the video has reached 6s
     checkInt = setInterval(function() {
-        if (player.getCurrentTime() > 0) {
+        console.log(player.getCurrentTime());
+        if (player.getCurrentTime() > 1) {
             changeSrc();
             clearInterval(checkInt);
         };
@@ -20,6 +20,8 @@ $(document).ready(function($){
     function changeSrc() {
         document.getElementById("0").className += ' active-region'
     }
+});
+$(document).ready(function($){
 
     // CSSMap;
     $("#map-europe").CSSMap({
