@@ -104,7 +104,8 @@
 
                         if (player.getCurrentTime() > 77 && player.getCurrentTime() < 125) {
                             elem = document.getElementById("77");
-                            if (!elem.classList.contains("focus")) {
+                            console.log(elem.classList.contains("focus"));
+                            if (!(elem.classList.contains("focus"))) {
                                elem.className += " focus";
                                 console.log("FOCUS");
                             }
