@@ -77,10 +77,9 @@
                 //    the player should play for six seconds and then stop.
                 var done = false;
                 function onPlayerStateChange(event) {
-                    if (event.data == YT.PlayerState.PLAYING && !done) {
+                    if (event.data == YT.PlayerState.PLAYING) {
                         startInterval();
                         //setTimeout(stopVideo, 6000);
-                        done = true;
                     }
                 }
                 function stopVideo() {
@@ -89,10 +88,11 @@
 
                 function startInterval() {
                     //checks every 1000ms to see if the video has reached 6s
-                    checkInt = setInterval(function() {
+                    //checkInt = setInterval(function() {
+                    setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
                             document.getElementById("0").className += " focus";
-                            
+                            console.log("FOCUS");
                         };
                     }, 1000)
                 }
