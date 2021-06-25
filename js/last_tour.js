@@ -1,29 +1,3 @@
-var player;
-var checkInt; // save this as a var in this scope so we can clear it later
-function onYouTubePlayerAPIReady() {
-    player = document.getElementById("player");
-    startInterval()
-}
-
-function startInterval() {
-    //checks every 1000ms to see if the video has reached 6s
-    checkInt = setInterval(function() {
-    console.log(player.getCurrentTime());
-        if (player.getCurrentTime() > 1) {
-            changeSrc();
-            clearInterval(checkInt);
-        };
-    }, 1000)
-}
-
-function changeSrc() {
-    document.getElementById("0").className += ' focus'
-}
-
-$( window ).on( "load", onYouTubePlayerAPIReady );
-
-$( window ).on( "load", startInterval );
-
 $(document).ready(function($){
 
     // CSSMap;
