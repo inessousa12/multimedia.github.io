@@ -55,6 +55,7 @@
                 // 3. This function creates an <iframe> (and YouTube player)
                 //    after the API code downloads.
                 var player;
+                var elem;
                 function onYouTubeIframeAPIReady() {
                     player = new YT.Player('player', {
                     height: '500',
@@ -75,13 +76,14 @@
                 // 5. The API calls this function when the player's state changes.
                 //    The function indicates that when playing a video (state=1),
                 //    the player should play for six seconds and then stop.
-                var done = false;
+                
                 function onPlayerStateChange(event) {
                     if (event.data == YT.PlayerState.PLAYING) {
                         startInterval();
                         //setTimeout(stopVideo, 6000);
                     }
                 }
+
                 function stopVideo() {
                     player.stopVideo();
                 }
@@ -91,8 +93,63 @@
                     //checkInt = setInterval(function() {
                     setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
-                            document.getElementById("0").className += " focus";
-                            console.log("FOCUS");
+                            elem = document.getElementById("0");
+                            if (!elem.classList.contains("focus")) {
+                               elem.className += " focus";
+                                console.log("FOCUS");
+                            }
+                        } else {
+                            elem.classList.remove("focus");
+                        }
+
+                        if (player.getCurrentTime() > 77 && player.getCurrentTime() < 125) {
+                            elem = document.getElementById("77");
+                            if (!elem.classList.contains("focus")) {
+                               elem.className += " focus";
+                                console.log("FOCUS");
+                            }
+                        } else {
+                            elem.classList.remove("focus");
+                        }
+
+                        if (player.getCurrentTime() > 125 && player.getCurrentTime() < 193) {
+                            elem = document.getElementById("125");
+                            if (!elem.classList.contains("focus")) {
+                               elem.className += " focus";
+                                console.log("FOCUS");
+                            }
+                        } else {
+                            elem.classList.remove("focus");
+                        }
+
+                        if (player.getCurrentTime() > 193 && player.getCurrentTime() < 251) {
+                            elem = document.getElementById("193");
+                            if (!elem.classList.contains("focus")) {
+                               elem.className += " focus";
+                                console.log("FOCUS");
+                            }
+                        } else {
+                            elem.classList.remove("focus");
+                        }
+
+                        if (player.getCurrentTime() > 251 && player.getCurrentTime() < 307) {
+                            elem = document.getElementById("251");
+                            if (!elem.classList.contains("focus")) {
+                               elem.className += " focus";
+                                console.log("FOCUS");
+                            }
+                        } else {
+                            elem.classList.remove("focus");
+                        }
+
+                        if (player.getCurrentTime() > 307) {
+                            elem = document.getElementById("307");
+                            if (!elem.classList.contains("focus")) {
+                               elem.className += " focus";
+                                console.log("FOCUS");
+                            }
+                        } else {
+                            elem.classList.remove("focus");
                         };
                     }, 1000)
                 }
