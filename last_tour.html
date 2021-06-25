@@ -94,10 +94,8 @@
                     setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
                             elem = document.getElementById("0");
-                            console.log(elem.classList.contains("focus"));
                             if (!elem.classList.contains("focus")) {
                                 elem.className += " focus";
-                                console.log("FOCUS");
                             }
                         } else {
                             document.getElementById("0").classList.remove("focus");
@@ -105,10 +103,8 @@
 
                         if (player.getCurrentTime() > 77 && player.getCurrentTime() < 125) {
                             elem = document.getElementById("77");
-                            console.log(elem.classList.contains("focus"));
                             if (!(elem.classList.contains("focus"))) {
                                elem.className += " focus";
-                                console.log("FOCUS");
                             }
                         } else {
                             document.getElementById("77").classList.remove("focus");
@@ -118,7 +114,6 @@
                             elem = document.getElementById("125");
                             if (!elem.classList.contains("focus")) {
                                elem.className += " focus";
-                                console.log("FOCUS");
                             }
                         } else {
                             document.getElementById("125").classList.remove("focus");
@@ -128,7 +123,6 @@
                             elem = document.getElementById("193");
                             if (!elem.classList.contains("focus")) {
                                elem.className += " focus";
-                                console.log("FOCUS");
                             }
                         } else {
                             document.getElementById("193").classList.remove("focus");
@@ -138,7 +132,6 @@
                             elem = document.getElementById("251");
                             if (!elem.classList.contains("focus")) {
                                elem.className += " focus";
-                                console.log("FOCUS");
                             }
                         } else {
                             document.getElementById("251").classList.remove("focus");
@@ -148,7 +141,6 @@
                             elem = document.getElementById("307");
                             if (!elem.classList.contains("focus")) {
                                elem.className += " focus";
-                                console.log("FOCUS");
                             }
                         } else {
                             document.getElementById("307").classList.remove("focus");
