@@ -80,17 +80,11 @@
                 function onPlayerStateChange(event) {
                     if (event.data == YT.PlayerState.PLAYING) {
                         startInterval();
-                        //setTimeout(stopVideo, 6000);
                     }
-                }
-
-                function stopVideo() {
-                    player.stopVideo();
                 }
 
                 function startInterval() {
                     //checks every 1000ms to see if the video has reached 6s
-                    //checkInt = setInterval(function() {
                     setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
                             elem = document.getElementById("0");
