@@ -94,12 +94,13 @@
                     setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
                             elem = document.getElementById("0");
+                            console.log(elem.classList.contains("focus"));
                             if (!elem.classList.contains("focus")) {
-                               elem.className += " focus";
+                                elem.className += " focus";
                                 console.log("FOCUS");
                             }
                         } else {
-                            elem.classList.remove("focus");
+                            document.getElementById("0").classList.remove("focus");
                         }
 
                         if (player.getCurrentTime() > 77 && player.getCurrentTime() < 125) {
@@ -110,7 +111,7 @@
                                 console.log("FOCUS");
                             }
                         } else {
-                            elem.classList.remove("focus");
+                            document.getElementById("77").classList.remove("focus");
                         }
 
                         if (player.getCurrentTime() > 125 && player.getCurrentTime() < 193) {
@@ -120,7 +121,7 @@
                                 console.log("FOCUS");
                             }
                         } else {
-                            elem.classList.remove("focus");
+                            document.getElementById("125").classList.remove("focus");
                         }
 
                         if (player.getCurrentTime() > 193 && player.getCurrentTime() < 251) {
@@ -130,7 +131,7 @@
                                 console.log("FOCUS");
                             }
                         } else {
-                            elem.classList.remove("focus");
+                            document.getElementById("193").classList.remove("focus");
                         }
 
                         if (player.getCurrentTime() > 251 && player.getCurrentTime() < 307) {
@@ -140,7 +141,7 @@
                                 console.log("FOCUS");
                             }
                         } else {
-                            elem.classList.remove("focus");
+                            document.getElementById("251").classList.remove("focus");
                         }
 
                         if (player.getCurrentTime() > 307) {
@@ -150,7 +151,7 @@
                                 console.log("FOCUS");
                             }
                         } else {
-                            elem.classList.remove("focus");
+                            document.getElementById("307").classList.remove("focus");
                         };
                     }, 1000)
                 }
