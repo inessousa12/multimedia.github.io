@@ -78,15 +78,23 @@
                 var done = false;
                 function onPlayerStateChange(event) {
                     if (event.data == YT.PlayerState.PLAYING && !done) {
-                        if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
-                            document.getElementById("0").className += " focus";
-                        }
+                        startInterval();
                         //setTimeout(stopVideo, 6000);
                         done = true;
                     }
                 }
                 function stopVideo() {
                     player.stopVideo();
+                }
+
+                function startInterval() {
+                    //checks every 1000ms to see if the video has reached 6s
+                    checkInt = setInterval(function() {
+                        if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
+                            document.getElementById("0").className += " focus";
+                            clearInterval(checkInt);
+                        };
+                    }, 1000)
                 }
             </script>
               
