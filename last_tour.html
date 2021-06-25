@@ -94,56 +94,56 @@
                     setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
                             elem = document.getElementById("0");
-                            if (!elem.classList.contains("focus")) {
-                                elem.className += " focus";
+                            if (!elem.classList.contains("active-region")) {
+                                elem.className += " active-region";
                             }
                         } else {
-                            document.getElementById("0").classList.remove("focus");
+                            document.getElementById("0").classList.remove("active-region");
                         }
 
                         if (player.getCurrentTime() > 77 && player.getCurrentTime() < 125) {
                             elem = document.getElementById("77");
-                            if (!(elem.classList.contains("focus"))) {
-                               elem.className += " focus";
+                            if (!(elem.classList.contains("active-region"))) {
+                               elem.className += " active-region";
                             }
                         } else {
-                            document.getElementById("77").classList.remove("focus");
+                            document.getElementById("77").classList.remove("active-region");
                         }
 
                         if (player.getCurrentTime() > 125 && player.getCurrentTime() < 193) {
                             elem = document.getElementById("125");
-                            if (!elem.classList.contains("focus")) {
-                               elem.className += " focus";
+                            if (!elem.classList.contains("active-region")) {
+                               elem.className += " active-region";
                             }
                         } else {
-                            document.getElementById("125").classList.remove("focus");
+                            document.getElementById("125").classList.remove("active-region");
                         }
 
                         if (player.getCurrentTime() > 193 && player.getCurrentTime() < 251) {
                             elem = document.getElementById("193");
-                            if (!elem.classList.contains("focus")) {
-                               elem.className += " focus";
+                            if (!elem.classList.contains("active-region")) {
+                               elem.className += " active-region";
                             }
                         } else {
-                            document.getElementById("193").classList.remove("focus");
+                            document.getElementById("193").classList.remove("active-region");
                         }
 
                         if (player.getCurrentTime() > 251 && player.getCurrentTime() < 307) {
                             elem = document.getElementById("251");
-                            if (!elem.classList.contains("focus")) {
-                               elem.className += " focus";
+                            if (!elem.classList.contains("active-region")) {
+                               elem.className += " active-region";
                             }
                         } else {
-                            document.getElementById("251").classList.remove("focus");
+                            document.getElementById("251").classList.remove("active-region");
                         }
 
                         if (player.getCurrentTime() > 307) {
                             elem = document.getElementById("307");
-                            if (!elem.classList.contains("focus")) {
-                               elem.className += " focus";
+                            if (!elem.classList.contains("active-region")) {
+                               elem.className += " active-region";
                             }
                         } else {
-                            document.getElementById("307").classList.remove("focus");
+                            document.getElementById("307").classList.remove("active-region");
                         };
                     }, 1000)
                 }
