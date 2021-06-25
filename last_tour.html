@@ -78,8 +78,11 @@
                 var done = false;
                 function onPlayerStateChange(event) {
                     if (event.data == YT.PlayerState.PLAYING && !done) {
-                    setTimeout(stopVideo, 6000);
-                    done = true;
+                        if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
+                            document.getElementById("0").className += " focus";
+                        }
+                        //setTimeout(stopVideo, 6000);
+                        done = true;
                     }
                 }
                 function stopVideo() {
