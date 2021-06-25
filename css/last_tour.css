@@ -55,6 +55,11 @@ body {
 
 /* video stuff */
 
+#player {
+    width: 80%;
+    margin-left: 5%;
+}
+
 .two-iframes{
     display: inline-flex;
     margin-top: -38px;
