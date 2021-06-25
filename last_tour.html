@@ -40,7 +40,6 @@
         </div>
 
         <section class="two-iframes">
-            <!-- <iframe id="player" src="https://www.youtube.com/embed/JkbTI-UPdZs?autoplay=1&start=0&mute=1" frameborder="0" scrolling="no" width="100%" height="500" align="left"> </iframe> -->
             <!-- 1. The <iframe> (and video player) will replace this <div> tag. --> 
             <div id="player"></div>
 
@@ -75,8 +74,6 @@
 
                 // 5. The API calls this function when the player's state changes.
                 //    The function indicates that when playing a video (state=1),
-                //    the player should play for six seconds and then stop.
-                
                 function onPlayerStateChange(event) {
                     if (event.data == YT.PlayerState.PLAYING) {
                         startInterval();
@@ -84,7 +81,7 @@
                 }
 
                 function startInterval() {
-                    //checks every 1000ms to see if the video has reached 6s
+                    //checks every 1000ms
                     setInterval(function() {
                         if (player.getCurrentTime() > 0 && player.getCurrentTime() < 77) {
                             elem = document.getElementById("0");
